@@ -1,0 +1,16 @@
+server:
+  port: 8740
+spring:
+  application:
+    name: feign
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+client:
+  one:
+    path: http://EUREKACLIENTHELLO/eureka_client/
+    name: EUREKACLIENTHELLO
+eurekaclienthello.ribbon.NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+#配置zipKin Server的地址
+#spring.zipkin.base-url: http://localhost:9411
