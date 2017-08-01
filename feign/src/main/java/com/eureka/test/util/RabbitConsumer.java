@@ -9,6 +9,10 @@ import com.rabbitmq.client.Consumer;
 import com.rabbitmq.client.Envelope;
 import com.rabbitmq.client.ShutdownSignalException;
 
+/**
+ * 仅为test.rabbit 原始api调用测试使用
+ * @author geping
+ */
 public class RabbitConsumer implements Consumer{
 	
 	private Channel channel;
